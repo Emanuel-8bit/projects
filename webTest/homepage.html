@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beautiful website with carousel and modern design">
+  <title>Dynamic Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <link rel="stylesheet" href="homepage.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+
+</head>
+<body>
+
+  
+  <header>
+    <h1 class="header-title">Add Color to Your Masterpiece</h1>
+    <p class="header-subtitle">Shop the here </p>
+  </header>
+
+<div class="imazhi1">
+    <h id="imzhText">Add color to your masterpieace</h>
+    <button id="imzhBtn"> Shop now</button>
+</div>
+<div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="images/2.png" alt="Glide" />
+            <p class="slide-caption">Glide</p>
+        </li>
+        <li class="glide__slide"><img src="images/4.png" alt="Magnetic Core Bobbin" />
+            <p class="slide-caption">Magnetic Core Bobbin</p></li>
+        <li class="glide__slide"><img src="images/3.png" alt="Premium Stabilizer" />
+            <p class="slide-caption">Magnetic Core Bobbin</p></li>
+        <li class="glide__slide"><img src="images/2.png" alt="Premium Stabilizer" />
+            <p class="slide-caption">Premium Stabilizer</p></li>
+        <li class="glide__slide"><img src="images/4.png" alt="Premium Stabilizer" />
+            <p class="slide-caption">Premium Stabilizer</p></li>
+      </ul>
+    </div>
+  
+    
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev <-</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next-></button>
+    </div>
+  </div>
+
+  <section class="featured-section">
+    <h2 class="featured-title">Featured Products</h2>
+    <div class="featured-products">
+      <div class="product">
+        <img src="images/2.png" alt="Embroidery Stabilizer">
+        <hr>
+        <h3 class="product-title">Embroidery Stabilizer</h3>
+      </div>
+      <div class="product">
+        <img src="images/2.png" alt="Cubbie Grey Elephant">
+        <hr>
+        <h3 class="product-title">Cubbie Grey Elephant</h3>
+      </div>
+      <div class="product">
+        <img src="images/3.png" alt="Kimberbell Cup of Cheer">
+        <hr>
+        <h3 class="product-title">Kimberbell Cup of Cheer</h3>
+      </div>
+      <div class="product">
+        <img src="images/4.png" alt="Kimberbell Two Scoops">
+        <hr>
+        <h3 class="product-title">Kimberbell Two Scoops</h3>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Beautiful Carousel Website. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 3,       
+    gap: 20,         
+    autoplay: 3000,  
+  }).mount();
+});
+
+  </script>
+</body>
+</html>
